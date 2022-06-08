@@ -7,6 +7,7 @@ import {
   Th,
   Thead,
   Tr,
+  Text,
 } from "@chakra-ui/react";
 import React from "react";
 import { roadmap } from "../../constants/daoInfo";
@@ -15,9 +16,9 @@ import FullCircle from "./FullCircle";
 import HalfCircle from "./HalfCircle";
 
 const Objectives = roadmap.map((obj) => (
-  <Tr key={obj.id} bg={obj.id % 2 ? "white" : "#fff4f7"}>
+  <Tr key={obj.id} bg={obj.id % 2 ? "white" : "#fff4f7"} h="5rem">
     <Td color="black" borderBottom="none">
-      {obj.objective}
+      <Text fontSize="xl" fontWeight={400}>{obj.objective}</Text>
     </Td>
     <Td>
       <Flex justifyContent="center">
@@ -44,13 +45,34 @@ export const DesktopView = () => (
         <Tr display={{ base: "none", md: "table-row" }}>
           <Th></Th>
           <Th color="black">
-            <Flex justifyContent="center">Completed</Flex>
+            <Text
+              fontFamily="IBM Plex Mono"
+              fontWeight={400}
+              fontSize="1rem"
+              textAlign="center"
+            >
+              Completed
+            </Text>
           </Th>
           <Th color="black">
-            <Flex justifyContent="center">In Progress</Flex>
+            <Text
+              fontFamily="IBM Plex Mono"
+              fontWeight={400}
+              fontSize="1rem"
+              textAlign="center"
+            >
+              In Progress
+            </Text>
           </Th>
           <Th color="black">
-            <Flex justifyContent="center">Future Plans</Flex>
+            <Text
+              fontFamily="IBM Plex Mono"
+              fontWeight={400}
+              fontSize="1rem"
+              textAlign="center"
+            >
+              Future Plans
+            </Text>
           </Th>
         </Tr>
       </Thead>

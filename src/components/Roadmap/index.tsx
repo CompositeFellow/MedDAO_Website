@@ -9,14 +9,16 @@ const Roadmap = () => {
   const isMobile = useIsMobile();
   return (
     <MainColumn>
-      <Flex py={{base: "4rem",md:"2em"}} direction="column" >
+      <Flex py={{ base: "4rem", md: "2rem" }} direction="column">
         <Heading
           as="h3"
           color="black"
           id="Roadmap"
           fontWeight={500}
-          fontSize='4xl'
-          px={{ base: "2rem", md: "none" }}
+          fontSize="6xl"
+          p={0}
+          px={{ base: "2rem", md: "none", lg:"1rem" }}
+          pt="2rem"
         >
           Roadmap
         </Heading>
