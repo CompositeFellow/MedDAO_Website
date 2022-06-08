@@ -19,6 +19,14 @@ type ContentProps = {
 };
 
 const StyledSlider = styled(Slider)`
+  height: 100%;
+  & > .slick-list {
+    height: 100%;
+    & > .slick-track {
+      height: 100%;
+  
+    } 
+  }
   & > *.slick-dots {
     display: flex !important;
     width: 100vw;
@@ -71,15 +79,15 @@ export const MobileView = () => {
     <Grid
       as="ul"
       gridTemplateColumns="1fr"
-      gridTemplateRows={"20rem 20rem"}
+      gridTemplateRows={"24rem 24rem"}
       h="100%"
       w="100vw"
       py="3rem"
     >
-      <GridItem w="100vw">
+      <GridItem w="100vw" h="100%">
         <HeroCard {...heroCard} />
       </GridItem>
-      <GridItem w="100vw">
+      <GridItem w="100vw" h="100%">
         <StyledSlider {...settings}>
           {cards &&
             cards.map((card: ContentProps, index: number) => {
