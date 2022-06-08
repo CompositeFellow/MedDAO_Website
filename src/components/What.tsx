@@ -2,43 +2,7 @@ import { Box, Button, Flex, Heading, Image, Text } from "@chakra-ui/react";
 import React from "react";
 import styled from "styled-components";
 import MainColumn from "../global/Layout/MainColumn";
-
-// const Container = styled.div`
-//   min-width: 400;
-//   width: 80%;
-//   display: flex;
-//   flex-wrap: wrap;
-//   justify-content: center;
-//   align-items: center;
-// `;
-
-// const Description = styled.div`
-//   display: flex;
-//   flex-direction: column;
-//   min-width: 320;
-//   width: 40%;
-// `;
-
-// const LearnBttn = styled.button`
-//   min-height: 3em;
-//   width: 50%;
-//   border-radius: 0.5em;
-//   background-color: #ff003f;
-//   border: none;
-//   color: white;
-//   font-family: "Futura";
-//   font-size: 24px;
-//   font-weight: 700;
-// `;
-
-// const Grid = styled.img`
-//   object-fit: contain;
-// `;
-
-// const Vid = styled.video`
-//   width: 80%;
-//   height: auto;
-// `;
+import { BaseButton } from "./BaseButton";
 
 const highFive =
   "https://image1.masterfile.com/getImage/NjQwLTA2MDUwNzc4ZW4uMDAwMDAwMDA=AK5V19/640-06050778en_Masterfile.jpg";
@@ -63,21 +27,13 @@ const What = () => {
           color="black"
         >
           <Heading as="h3">How We Work</Heading>
-          <Text as="p">
+          <Text as="p" py="2rem">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
             laborum a eum possimus assumenda, magni unde amet quasi,
             consequaturin fuga commodi minus ratione illo, provident ab nostrum
             nulla.Tempore.
           </Text>
-          <Button
-            bg="red"
-            borderRadius="1em"
-            fontFamily="Futura"
-            color="white"
-            mt="2em"
-          >
-            Learn More
-          </Button>
+          <BaseButton href="/" text="Learn more" />
         </Flex>
         <Flex
           direction="column"
