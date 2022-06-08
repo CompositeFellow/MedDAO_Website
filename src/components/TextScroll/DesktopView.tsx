@@ -43,6 +43,8 @@ export const DesktopView = () => (
               size="3xl"
               color="white"
               textAlign="center"
+              fontWeight={400}
+              mb='1rem'
             >
               A decentralized medical knowledge
             </Heading>
@@ -54,6 +56,7 @@ export const DesktopView = () => (
               size="3xl"
               color="white"
               textAlign="center"
+              fontWeight={400}
             >
               network at your fingertips.
             </Heading>

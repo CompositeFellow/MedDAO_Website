@@ -25,6 +25,7 @@ export const MobileView = () => (
           size="3xl"
           color="white"
           textAlign="center"
+          fontWeight={400}
         >
           A decentralized medical knowledge network at your fingertips.
         </Heading>
