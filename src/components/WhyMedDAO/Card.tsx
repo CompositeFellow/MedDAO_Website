@@ -24,7 +24,7 @@ export const Card = ({
   <GridItem
     as="li"
     w="100%"
-    h={{ base: "24rem", md: "22rem" }}
+    h={{ base: "24rem", lg: "22rem" }}
     p="2rem"
     bg={{
       base: !isEvenCard ? "white" : "#FFF4F7",

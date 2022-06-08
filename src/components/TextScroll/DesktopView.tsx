@@ -21,7 +21,7 @@ export const DesktopView = () => (
       </GridItem>
       <GridItem area={"main"} w="100%" h="10rem" zIndex={1}></GridItem>
       <GridItem area={"main"} w="100%" zIndex={2}>
-        <VStack w="60%" px="3rem" m="0 auto">
+        <VStack w="100%" px="3rem" m="0 auto">
           <Box h="10rem" w="10rem" m="0 auto" mt="-6rem">
             <svg
               xmlns="http://www.w3.org/2000/svg"

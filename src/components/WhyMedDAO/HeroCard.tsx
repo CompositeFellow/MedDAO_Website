@@ -9,7 +9,7 @@ export const HeroCard = ({ title }: HeroCardProps) => (
     <GridItem
       as="li"
       w="100%"
-      h={{base: '24rem', md:"22rem"}}
+      h={{ base: "24rem", lg: "22rem" }}
       bg={"#FF003F"}
       colSpan={{ sm: 1, md: 2 }}
       listStyleType="none"
@@ -23,7 +23,7 @@ export const HeroCard = ({ title }: HeroCardProps) => (
         alignItems="center"
       >
         <Heading
-          fontSize="5rem"
+          fontSize={{ base: "4rem", md: "5rem" }}
           textAlign={"center"}
           color="white"
           fontWeight={400}
