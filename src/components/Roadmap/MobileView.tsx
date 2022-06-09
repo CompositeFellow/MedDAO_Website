@@ -27,17 +27,23 @@ export const MobileView = () => (
       <HStack
         key={ulid()}
         w="100%"
-        minH="3rem"
+        minH="4rem"
         bg={obj.id % 2 ? "white" : "#fff4f7"}
       >
         <HStack justifyContent="center" flex="1">
-          <Text textAlign="left" w="100%" p="0.5rem">
+          <Text
+            textAlign="left"
+            w="100%"
+            p="0.5rem"
+            fontSize="1.2em"
+            fontFamily="Neue Montreal"
+          >
             {obj.objective}
           </Text>
         </HStack>
         <HStack
           justifyContent="center"
-          flex="0 0 20vw"
+          flex="0 0 48px"
           spacing="1rem"
           pr="0.8rem"
         >

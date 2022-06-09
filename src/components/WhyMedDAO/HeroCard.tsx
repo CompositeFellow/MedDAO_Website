@@ -1,4 +1,4 @@
-import { GridItem, Text, VStack } from "@chakra-ui/react";
+import { GridItem, Heading, VStack } from "@chakra-ui/react";
 
 type HeroCardProps = {
   title: string;
@@ -9,7 +9,7 @@ export const HeroCard = ({ title }: HeroCardProps) => (
     <GridItem
       as="li"
       w="100%"
-      h="20rem"
+      h={{ base: "24rem", lg: "22rem" }}
       bg={"#FF003F"}
       colSpan={{ sm: 1, md: 2 }}
       listStyleType="none"
@@ -22,14 +22,14 @@ export const HeroCard = ({ title }: HeroCardProps) => (
         justifyContent="center"
         alignItems="center"
       >
-        <Text
-          fontSize="6xl"
+        <Heading
+          fontSize={{ base: "4rem", md: "5rem" }}
           textAlign={"center"}
           color="white"
-          fontWeight={700}
+          fontWeight={400}
         >
           {title}
-        </Text>
+        </Heading>
       </VStack>
     </GridItem>
   </>

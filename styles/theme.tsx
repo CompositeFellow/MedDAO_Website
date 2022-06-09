@@ -5,6 +5,7 @@ const theme = extendTheme({
     heading: `'Neue Montreal', sans-serif`,
     body: `'Neue Montreal', sans-serif`,
     neue: `'Neue Montreal', sans-serif`,
+    ibm: `'IBM Plex Mono', sans-serif`,
     // neue: `'Neue Montreal', sans-serif`,
   },
 });

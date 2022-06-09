@@ -1,4 +1,4 @@
-import { Box, GridItem, HStack, Link, Text } from "@chakra-ui/react";
+import { Box, GridItem, HStack, Link, Text, Heading } from "@chakra-ui/react";
 import NextLink from "next/link";
 import { ulid } from "ulid";
 
@@ -24,7 +24,7 @@ export const Card = ({
   <GridItem
     as="li"
     w="100%"
-    h="20rem"
+    h={{ base: "24rem", lg: "22rem" }}
     p="2rem"
     bg={{
       base: !isEvenCard ? "white" : "#FFF4F7",
@@ -60,11 +60,18 @@ export const Card = ({
         </NextLink>
       )}
     </HStack>
-    <Text fontSize="2xl" fontFamily='IBM Plex Mono' fontWeight={500}>{title}</Text>
+    <Heading
+      fontSize="2xl"
+      fontFamily="IBM Plex Mono"
+      fontWeight={500}
+      mb="0.5rem"
+    >
+      {title}
+    </Heading>
     {paras &&
       paras.length > 0 &&
       paras.map((para) => (
-        <Text key={ulid()} fontSize="l">
+        <Text key={ulid()} fontSize="xl">
           {para}
         </Text>
       ))}
