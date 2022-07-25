@@ -11,7 +11,7 @@ export const MobileView = () => {
         position="absolute"
         top={0}
         w="100%"
-        h="100vh"
+        h="70vh"
         direction="column"
         align="center"
         bg="black"

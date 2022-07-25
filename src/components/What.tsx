@@ -66,7 +66,7 @@ const What = () => {
           minH={{ base: "200px", md: "420px" }}
           minW="320px"
           mt="1em"
-          backgroundImage="./testing/waveMesh.svg"
+          backgroundImage="./waveMesh.svg"
           py="1em"
         >
           <AspectRatio
